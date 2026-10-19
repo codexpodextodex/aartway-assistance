@@ -10,7 +10,7 @@
       description: 'AartWay Assistance – personlig service som levererar. Administrativ assistans, föreläsningar och workshops samt praktiska arrangemang för privatpersoner och företag i Helsingfors, på svenska och finska.',
       menu: 'Meny', top: 'Till toppen', scroll: 'Scrolla vidare',
       subject: 'Förfrågan via webbplatsen',
-      topics: ['Administrativ assistans', 'Föreläsning / workshop', 'Praktiska arrangemang', 'Något annat'],
+      topics: ['Administrativ assistans', 'Föreläsning / workshop', 'Praktiska arrangemang', 'UGC & digital assistans', 'Något annat'],
       labels: { name: 'Namn', email: 'E-post', topic: 'Gäller', message: 'Meddelande' },
       invalid: 'Fyll i ditt namn och en giltig e-postadress.',
       opened: 'Ditt e-postprogram öppnas – skicka meddelandet därifrån. Fungerar det inte? Mejla aartwayassistance@gmail.com.'
@@ -20,7 +20,7 @@
       description: 'AartWay Assistance – henkilökohtaista palvelua, joka tuottaa tulosta. Hallinnollista apua, luentoja ja työpajoja sekä käytännön järjestelyjä yksityishenkilöille ja yrityksille Helsingissä, suomeksi ja ruotsiksi.',
       menu: 'Valikko', top: 'Ylös', scroll: 'Jatka alas',
       subject: 'Yhteydenotto verkkosivuilta',
-      topics: ['Hallinnollinen apu', 'Luento / työpaja', 'Käytännön järjestelyt', 'Jotain muuta'],
+      topics: ['Hallinnollinen apu', 'Luento / työpaja', 'Käytännön järjestelyt', 'UGC & digitaalinen apu', 'Jotain muuta'],
       labels: { name: 'Nimi', email: 'Sähköposti', topic: 'Aihe', message: 'Viesti' },
       invalid: 'Täytä nimesi ja toimiva sähköpostiosoite.',
       opened: 'Sähköpostiohjelmasi avautuu – lähetä viesti sieltä. Eikö se toimi? Kirjoita osoitteeseen aartwayassistance@gmail.com.'
