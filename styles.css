@@ -601,7 +601,7 @@ details[open] > summary + p { animation: panel-in .5s var(--ease); }
 
 @media (max-width: 680px) {
   .hero { height: auto; min-height: 0; max-height: none; display: grid; grid-template-columns: 100%; }
-  .hero-media { position: relative; grid-area: 1 / 1; height: min(78svh, 660px); }
+  .hero-media { position: relative; grid-area: 1 / 1; height: auto; aspect-ratio: 900 / 947; }
   .hero-inner { display: contents; }
   .hero-title { grid-area: 1 / 1; align-self: end; position: relative; z-index: 2; padding: 0 var(--pad) 14px; margin: 0; }
   .hero-title .t1 { font-size: 24.5vw; }
