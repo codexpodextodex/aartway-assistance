@@ -73,21 +73,30 @@
   const menuBtn = document.querySelector('.menu-btn');
   let lastY = window.scrollY;
 
+  const hero = document.querySelector('.hero');
+  const heroMedia = document.querySelector('.hero-media');
+  const phone = window.matchMedia('(max-width: 680px)');
+
+  function setHeaderTone() {
+    const overHero = hero && window.scrollY < hero.offsetHeight - header.offsetHeight / 2;
+    header.classList.toggle('on-dark', Boolean(overHero) && !body.classList.contains('menu-open'));
+  }
+
   function closeMenu() {
     body.classList.remove('menu-open');
     menuBtn.setAttribute('aria-expanded', 'false');
+    setHeaderTone();
   }
   menuBtn.addEventListener('click', () => {
     const open = !body.classList.contains('menu-open');
     body.classList.toggle('menu-open', open);
     menuBtn.setAttribute('aria-expanded', String(open));
+    setHeaderTone();
   });
   document.querySelectorAll('.nav a').forEach((a) => a.addEventListener('click', closeMenu));
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
 
   /* ---------- Scroll effects (header state + hero parallax) ---------- */
-  const mast = document.querySelector('.hero-mast span');
-  const sun = document.querySelector('.hero-sun');
   let ticking = false;
 
   function onScroll() {
@@ -96,15 +105,16 @@
     const goingDown = y > lastY && y > 480 && !body.classList.contains('menu-open');
     header.classList.toggle('hide', goingDown);
     lastY = y;
-    if (!reduceMotion && y < window.innerHeight * 1.2) {
-      if (mast) mast.style.transform = `translate3d(-.035em, ${y * 0.22}px, 0)`;
-      if (sun) sun.style.translate = `0 ${y * 0.12}px`;
+    setHeaderTone();
+    if (heroMedia && !reduceMotion && !phone.matches && y < hero.offsetHeight) {
+      heroMedia.style.transform = `translate3d(0, ${y * 0.25}px, 0)`;
     }
     ticking = false;
   }
   window.addEventListener('scroll', () => {
     if (!ticking) { ticking = true; requestAnimationFrame(onScroll); }
   }, { passive: true });
+  window.addEventListener('resize', setHeaderTone);
   onScroll();
 
   /* ---------- Reveal on scroll ---------- */

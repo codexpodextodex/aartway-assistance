@@ -12,13 +12,13 @@
 <meta property="og:title" content="AartWay Assistance – Din tid, mitt fokus">
 <meta property="og:description" content="Administrativ assistans, föreläsningar och workshops samt praktiska arrangemang – på svenska och finska. Nina Aartokallio, Helsingfors.">
 <meta property="og:url" content="https://codexpodextodex.github.io/aartway-assistance/">
-<meta property="og:image" content="https://codexpodextodex.github.io/aartway-assistance/img/og.jpg">
+<meta property="og:image" content="https://codexpodextodex.github.io/aartway-assistance/img/og.jpg?v=2">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Homemade+Apple&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/nina-hero.webp" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp?v=2" imagesrcset="img/hero-m.webp?v=2 900w, img/hero-1600.webp?v=2 1600w, img/hero-2400.webp?v=2 2400w" imagesizes="100vw" fetchpriority="high">
 <link rel="stylesheet" href="styles.css">
 <script>document.documentElement.classList.add('js');</script>
 <script type="application/ld+json">
@@ -80,37 +80,34 @@
 
 <!-- HERO -->
 <section class="hero" id="top">
-  <div class="wrap hero-meta">
-    <span>©2025</span>
-    <span class="hero-meta-mid">(Nina Aartokallio)</span>
-    <span data-fi="Helsinki — FI">Helsingfors — FI</span>
-  </div>
+  <picture class="hero-media">
+    <source media="(max-width: 680px)" srcset="img/hero-m.webp?v=2">
+    <img src="img/hero-1600.webp?v=2" srcset="img/hero-1600.webp?v=2 1600w, img/hero-2400.webp?v=2 2400w" sizes="100vw" width="2400" height="1333" alt="Nina Aartokallio, grundare av AartWay Assistance" data-fi-alt="Nina Aartokallio, AartWay Assistancen perustaja" fetchpriority="high">
+  </picture>
+  <div class="hero-shade" aria-hidden="true"></div>
 
-  <div class="wrap hero-grid">
-    <div class="hero-mast" aria-hidden="true"><span>AartWay</span></div>
-    <div class="hero-sun" aria-hidden="true"></div>
-    <figure class="hero-figure">
-      <img src="img/nina-hero.webp" width="1787" height="1400" alt="Nina Aartokallio, grundare av AartWay Assistance" data-fi-alt="Nina Aartokallio, AartWay Assistancen perustaja" fetchpriority="high">
-    </figure>
-
-    <div class="hero-copy">
-      <h1><span data-fi="Sinun aikasi,">Din tid,</span><br><em data-fi="minun fokukseni.">mitt fokus.</em></h1>
-      <p class="hero-lead" data-fi="Henkilökohtaista palvelua, joka tuottaa tulosta: hallinnollista apua, luentoja ja työpajoja sekä käytännön järjestelyjä yksityishenkilöille ja yrityksille.">Personlig service som levererar: administrativ assistans, föreläsningar och workshops samt praktiska arrangemang för privatpersoner och företag.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-dark" href="#kontakt"><span data-fi="Ota yhteyttä">Kontakta mig</span><i class="btn-dot"><svg><use href="#arrow-ne"/></svg></i></a>
-        <a class="btn btn-ghost" href="#tjanster"><span data-fi="Katso palvelut">Se tjänsterna</span></a>
-      </div>
-    </div>
-
-    <aside class="hero-side">
-      <p class="hero-side-label" data-fi="Palvelut">Tjänster</p>
-      <ol class="hero-services">
-        <li><a href="#tjanster" data-service="0"><span class="n">01</span><span data-fi="Hallinnollinen apu">Administrativ assistans</span></a></li>
-        <li><a href="#tjanster" data-service="1"><span class="n">02</span><span data-fi="Luennot &amp; työpajat">Föreläsningar &amp; workshops</span></a></li>
-        <li><a href="#tjanster" data-service="2"><span class="n">03</span><span data-fi="Käytännön järjestelyt">Praktiska arrangemang</span></a></li>
-      </ol>
-      <p class="hero-side-foot"><span class="pulse" aria-hidden="true"></span><span data-fi="Suomeksi ja ruotsiksi · Helsinki">Svenska &amp; finska · Helsingfors</span></p>
+  <div class="wrap hero-inner">
+    <aside class="hero-list">
+      <p class="hero-list-label" data-fi="Palvelut">Tjänster</p>
+      <ul>
+        <li><a href="#tjanster" data-service="0" data-fi="Hallinnollinen apu">Administrativ assistans</a></li>
+        <li><a href="#tjanster" data-service="1" data-fi="Luennot &amp; työpajat">Föreläsningar &amp; workshops</a></li>
+        <li><a href="#tjanster" data-service="2" data-fi="Käytännön järjestelyt">Praktiska arrangemang</a></li>
+        <li data-fi="Suomeksi ja ruotsiksi">Svenska &amp; finska</li>
+      </ul>
     </aside>
+
+    <p class="hero-year">©2025 <span data-fi="— Helsinki">— Helsingfors</span></p>
+    <h1 class="hero-title">
+      <span class="t1">AartWay</span>
+      <span class="t2">Assistance</span>
+      <span class="sr-only" data-fi="Nina Aartokallio – henkilökohtaista palvelua Helsingissä">Nina Aartokallio – personlig service i Helsingfors</span>
+    </h1>
+
+    <div class="hero-note">
+      <p><b data-fi="Sinun aikasi, minun fokukseni.">Din tid, mitt fokus.</b> <span data-fi="Henkilökohtaista palvelua, joka tuottaa tulosta – yksityishenkilöille ja yrityksille, suomeksi ja ruotsiksi.">Personlig service som levererar – för privatpersoner och företag, på svenska och finska.</span></p>
+      <a class="btn btn-white btn-sm" href="#kontakt"><span data-fi="Ota yhteyttä">Kontakta mig</span><i class="btn-dot"><svg><use href="#arrow-ne"/></svg></i></a>
+    </div>
   </div>
 </section>
 
@@ -152,16 +149,15 @@
 <!-- STATEMENT -->
 <section class="statement" aria-label="AartWay">
   <div class="wrap">
-    <p class="statement-text reveal">
-      <span data-fi="Arjen kaaoksesta">Från vardagskaos</span>
-      <span class="pill-img"><img src="img/nina-pill.webp" width="360" height="180" alt="" loading="lazy"></span>
-      <span class="muted-2" data-fi="selkeään järjestykseen.">till ordning och reda.</span>
-    </p>
-    <div class="statement-foot reveal">
-      <svg class="mark mark-accent" aria-hidden="true"><use href="#mark"/></svg>
-      <p data-fi="Intohimoni on luoda järjestystä, rakennetta ja ratkaisuja, jotka todella toimivat.">Jag brinner för att skapa ordning, struktur och lösningar som verkligen fungerar.</p>
+    <div class="statement-stage">
+      <div class="statement-img"><img src="img/statement-desk.webp" width="1160" height="800" alt="" loading="lazy"></div>
+      <p class="statement-text"><span data-fi="Arjen kaaoksesta">Från vardagskaos</span><br><span data-fi="selkeään järjestykseen.">till ordning och reda.</span></p>
     </div>
-    <a class="round-btn" href="#varfor" aria-label="Scrolla vidare"><svg><use href="#arrow"/></svg></a>
+    <div class="statement-foot reveal">
+      <p data-fi="Intohimoni on luoda järjestystä, rakennetta ja ratkaisuja, jotka todella toimivat.">Jag brinner för att skapa ordning, struktur och lösningar som verkligen fungerar.</p>
+      <svg class="mark mark-accent" aria-hidden="true"><use href="#mark"/></svg>
+    </div>
+    <div class="divider"><a class="round-btn" href="#varfor" aria-label="Scrolla vidare"><svg><use href="#arrow"/></svg></a></div>
   </div>
 </section>
 
@@ -170,39 +166,32 @@
   <div class="wrap">
     <div class="section-head center">
       <p class="eyebrow"><i></i><span data-fi="Miksi AartWay">Varför AartWay</span><span class="idx">(03)</span></p>
-      <h2 id="why-h" class="h2" data-fi="Arki helpommaksi ja tehokkaammaksi">Din vardag – enklare och mer effektiv</h2>
-      <p class="sub" data-fi="Tarvitsetpa tukea päivittäiseen työhön, apua tapahtuman suunnitteluun tai inspiraatiota tiimillesi.">Oavsett om du behöver stöd i det dagliga arbetet, planering av evenemang eller inspiration för ditt team.</p>
+      <h2 id="why-h" class="h2" data-fi="Sinun tavoitteesi, minun fokukseni">Dina mål, mitt fokus</h2>
+      <p class="sub" data-fi="Tarvitsetpa tukea päivittäiseen työhön, apua tapahtuman suunnitteluun tai inspiraatiota tiimillesi – tavoitteena on tehdä arjestasi helpompaa ja tehokkaampaa.">Oavsett om du behöver stöd i det dagliga arbetet, planering av evenemang eller inspiration för ditt team – målet är att göra din vardag enklare och mer effektiv.</p>
     </div>
 
     <div class="bento">
       <article class="card card-photo reveal">
-        <div class="card-media">
-          <img src="img/svc-admin-wide.webp" width="1600" height="900" alt="" loading="lazy">
-          <div class="todo" aria-hidden="true">
-            <p class="todo-h"><span data-fi="Viikon lista">Veckans lista</span><span class="todo-count">3/4</span></p>
-            <ul>
-              <li class="done"><i><svg><use href="#check"/></svg></i><span data-fi="Tapahtuman suunnittelu">Planera evenemanget</span></li>
-              <li class="done"><i><svg><use href="#check"/></svg></i><span data-fi="Tilan varaus">Boka lokal</span></li>
-              <li class="done"><i><svg><use href="#check"/></svg></i><span data-fi="Kutsujen lähetys">Skicka inbjudningar</span></li>
-              <li class="doing"><i></i><span data-fi="Työpajan valmistelu">Förbered workshopen</span></li>
-            </ul>
-          </div>
-        </div>
+        <div class="card-media"><img src="img/svc-admin-tall.webp" width="800" height="1000" alt="" loading="lazy"></div>
         <div class="card-body">
           <h3 data-fi="Räätälöidyt ratkaisut">Skräddarsydda lösningar</h3>
           <p data-fi="Sekä yksityishenkilöille että yrityksille – suunniteltu juuri sinun tarpeisiisi.">För både privatpersoner och företag – utformade efter just dina behov.</p>
         </div>
       </article>
 
-      <article class="card card-accent reveal">
-        <div class="lang-visual" aria-hidden="true">
-          <span class="lv-a">SV</span>
-          <span class="lv-swap"><svg><use href="#arrow"/></svg><svg><use href="#arrow"/></svg></span>
-          <span class="lv-b">FI</span>
+      <article class="card card-ui reveal">
+        <div class="card-body card-body-top">
+          <h3 data-fi="Järjestystä ja rakennetta">Ordning och struktur</h3>
+          <p data-fi="Yksi yhteyshenkilö, joka pitää kokonaisuuden koossa.">En kontaktperson som håller ihop helheten.</p>
         </div>
-        <div class="card-body">
-          <h3 data-fi="Suomi &amp; ruotsi">Svenska &amp; finska</h3>
-          <p data-fi="Henkilökohtaista palvelua, joustavuutta ja ratkaisuja molemmilla kielillä.">Personlig service, flexibilitet och lösningar på båda språken.</p>
+        <div class="todo" aria-hidden="true">
+          <p class="todo-h"><span data-fi="Viikon lista">Veckans lista</span><span class="todo-count">3/4</span></p>
+          <ul>
+            <li class="done"><i><svg><use href="#check"/></svg></i><span data-fi="Tapahtuman suunnittelu">Planera evenemanget</span></li>
+            <li class="done"><i><svg><use href="#check"/></svg></i><span data-fi="Tilan varaus">Boka lokal</span></li>
+            <li class="done"><i><svg><use href="#check"/></svg></i><span data-fi="Kutsujen lähetys">Skicka inbjudningar</span></li>
+            <li class="doing"><i></i><span data-fi="Työpajan valmistelu">Förbered workshopen</span></li>
+          </ul>
         </div>
       </article>
 
@@ -214,6 +203,18 @@
         <div class="card-body">
           <h3 data-fi="Helsinki – ja sinne, missä tarvitset">Helsingfors – och dit du behöver</h3>
           <p data-fi="Toimin Helsingissä, mutta matkustan tarvittaessa.">Jag finns fysiskt i Helsingfors men kan resa vid behov.</p>
+        </div>
+      </article>
+
+      <article class="card card-phone reveal">
+        <div class="phone" aria-hidden="true">
+          <img src="img/nina-portrait-mono.webp" width="960" height="1200" alt="" loading="lazy">
+          <span class="phone-time">09:00</span>
+          <span class="phone-bubble"><b>AartWay Assistance</b><span data-fi="Hei! Miten voin auttaa? Palvelen suomeksi ja ruotsiksi.">Hej! Hur kan jag hjälpa dig? Jag hjälper dig på svenska och finska.</span></span>
+        </div>
+        <div class="card-body">
+          <h3 data-fi="Suomi &amp; ruotsi">Svenska &amp; finska</h3>
+          <p data-fi="Henkilökohtaista palvelua ja joustavuutta molemmilla kielillä.">Personlig service och flexibilitet på båda språken.</p>
         </div>
       </article>
     </div>
@@ -498,7 +499,7 @@
       <div class="contact-info reveal">
         <p class="contact-lead" data-fi="Ota yhteyttä, niin jutellaan, miten voin auttaa sinua!">Hör av dig så diskuterar vi hur jag kan hjälpa dig!</p>
         <div class="person">
-          <img src="img/nina-avatar.webp" width="160" height="160" alt="" loading="lazy">
+          <img src="img/nina-avatar.webp?v=2" width="160" height="160" alt="" loading="lazy">
           <div><b>Nina Aartokallio</b><span data-fi="Perustaja, AartWay Assistance">Grundare, AartWay Assistance</span></div>
         </div>
         <a class="mail-big" href="mailto:aartwayassistance@gmail.com">aartwayassistance<wbr>@gmail.com<svg><use href="#arrow-ne"/></svg></a>
@@ -534,10 +535,9 @@
 <footer class="site-footer">
   <div class="wrap">
     <div class="footer-top">
-      <div class="footer-col">
-        <p class="footer-h" data-fi="Yhteystiedot">Kontakt</p>
-        <a href="mailto:aartwayassistance@gmail.com">aartwayassistance@gmail.com</a>
-        <p data-fi="Helsinki, Suomi">Helsingfors, Finland</p>
+      <div class="footer-col footer-col-lead">
+        <p class="footer-big" data-fi="Ota yhteyttä,<br>niin jutellaan.">Hör av dig,<br>så pratar vi.</p>
+        <a class="btn btn-dark btn-sm" href="mailto:aartwayassistance@gmail.com"><span>aartwayassistance@gmail.com</span><i class="btn-dot"><svg><use href="#arrow-ne"/></svg></i></a>
       </div>
       <div class="footer-col">
         <p class="footer-h" data-fi="Sivut">Sidor</p>
@@ -545,17 +545,19 @@
         <a href="#om" data-fi="Minusta">Om mig</a>
         <a href="#process" data-fi="Näin se toimii">Så går det till</a>
         <a href="#faq" data-fi="Kysymykset">Frågor</a>
+        <a href="#kontakt" data-fi="Yhteystiedot">Kontakt</a>
       </div>
       <div class="footer-col">
         <p class="footer-h" data-fi="Yritys">Företaget</p>
         <p>AartWay Assistance</p>
         <p><span data-fi="Y-tunnus">FO-nummer</span> 3524634-2</p>
+        <p data-fi="Helsinki, Suomi">Helsingfors, Finland</p>
       </div>
       <div class="footer-col footer-col-end">
-        <a class="round-btn round-btn-light" href="#top" aria-label="Till toppen"><svg><use href="#arrow"/></svg></a>
+        <a class="round-btn round-btn-up" href="#top" aria-label="Till toppen"><svg><use href="#arrow"/></svg></a>
       </div>
     </div>
-    <p class="footer-mark" aria-hidden="true"><svg class="mark"><use href="#mark"/></svg><span>AartWay</span></p>
+    <p class="footer-mark" aria-hidden="true"><span>AartWay</span><svg class="mark"><use href="#mark"/></svg></p>
     <div class="footer-bottom">
       <p>© <span id="year">2026</span> AartWay Assistance · Nina Aartokallio</p>
       <p data-fi="Sinun aikasi, minun fokukseni.">Din tid, mitt fokus.</p>
